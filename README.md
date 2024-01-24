@@ -4,6 +4,7 @@ Source code for iOs application to track cryptocurrency
 Group D(Cross Section)
 -Chandru Kumaran(1174815)
 -Vinayak Dev(1179194)
+-Judin Joseph(1173254)
 
 
 
