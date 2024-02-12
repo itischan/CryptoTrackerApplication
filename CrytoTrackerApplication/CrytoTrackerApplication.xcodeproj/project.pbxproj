@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4318C4532B79C5B3007D6B77 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4318C4522B79C5B3007D6B77 /* Color.swift */; };
 		43260D232B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43260D222B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift */; };
 		43260D252B60C4FF00731D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43260D242B60C4FF00731D8D /* ContentView.swift */; };
 		43260D272B60C50100731D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43260D262B60C50100731D8D /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4318C4522B79C5B3007D6B77 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		43260D1F2B60C4FF00731D8D /* CrytoTrackerApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoTrackerApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43260D222B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoTrackerApplicationApp.swift; sourceTree = "<group>"; };
 		43260D242B60C4FF00731D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4318C4512B79C5B3007D6B77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4318C4522B79C5B3007D6B77 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		43260D162B60C4FF00731D8D = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		43260D212B60C4FF00731D8D /* CrytoTrackerApplication */ = {
 			isa = PBXGroup;
 			children = (
+				4318C4512B79C5B3007D6B77 /* Extensions */,
 				43260D222B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift */,
 				43260D242B60C4FF00731D8D /* ContentView.swift */,
 				43260D262B60C50100731D8D /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				43260D252B60C4FF00731D8D /* ContentView.swift in Sources */,
 				43260D232B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift in Sources */,
+				4318C4532B79C5B3007D6B77 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
