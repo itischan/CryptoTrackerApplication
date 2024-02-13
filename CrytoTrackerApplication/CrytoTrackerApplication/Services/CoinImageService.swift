@@ -1,8 +1,8 @@
 //
 //  CoinImageService.swift
-//  SwiftfulCrypto
+// CryptoTrackerApplication
 //
-//  Created by Nick Sarno on 5/9/21.
+//  Created by Vinayak on 2/12/24
 //
 
 import Foundation
@@ -25,7 +25,7 @@ class CoinImageService {
         getCoinImage()
     }
     
-    private func getCoinImage() {
+    func getCoinImage() {
         if let savedImage = fileManager.getImage(imageName: imageName, folderName: folderName) {
             image = savedImage
         } else {
@@ -33,7 +33,7 @@ class CoinImageService {
         }
     }
     
-    private func downloadCoinImage() {
+     func downloadCoinImage() {
         guard let url = URL(string: coin.image) else { return }
         
         imageSubscription = NetworkingManager.download(url: url)
