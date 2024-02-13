@@ -1,8 +1,8 @@
 //
 //  CoinImageView.swift
-//  SwiftfulCrypto
+//  CryptoTrackerApplication
 //
-//  Created by Nick Sarno on 5/9/21.
+//  Created by Vinayak on 2/13/24
 //
 
 import SwiftUI
@@ -24,8 +24,8 @@ struct CoinImageView: View {
             } else if vm.isLoading {
                 ProgressView()
             } else {
-                Image(systemName: "questionmark")
-                    .foregroundColor(Color.theme.secondaryText)
+                Image(systemName: "xmark.fill")
+                    .foregroundColor(Color.orange)
             }
         }
     }

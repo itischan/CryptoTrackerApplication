@@ -1,8 +1,8 @@
 //
 //  CoinLogoView.swift
-//  SwiftfulCrypto
+//  CryptoTrackerApplication
 //
-//  Created by Nick Sarno on 5/9/21.
+//  Created by Vinayak  on 2/12/24.
 //
 
 import SwiftUI
@@ -31,16 +31,6 @@ struct CoinLogoView: View {
     }
 }
 
-struct CoinLogoView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        Group {
-            CoinLogoView(coin: dev.coin)
-                .previewLayout(.sizeThatFits)
-
-            CoinLogoView(coin: dev.coin)
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
-        }
-    }
+#Preview {
+    CoinLogoView(coin: DeveloperPreview.instance.coin)
 }
