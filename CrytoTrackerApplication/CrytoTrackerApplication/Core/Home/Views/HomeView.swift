@@ -64,6 +64,6 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
-        .environmentObject(DeveloperPreview.instance.homeVM)
+        .environmentObject(HomeViewModel())
 }
 

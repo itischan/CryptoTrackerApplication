@@ -13,7 +13,13 @@ class HomeViewModel:ObservableObject{
     private let dataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()
     init(){
-        self.allCoins.append(DeveloperPreview.instance.coin)
-        self.portfolioCoins.append(DeveloperPreview.instance.coin)
+       getSubscribers()
+    }
+    func getSubscribers(){
+        dataService.$allCoins
+            .sink {[weak self] (returnedCoins) in
+                self?.allCoins = returnedCoins
+            }
+            .store(in: &cancellables)
     }
 }
