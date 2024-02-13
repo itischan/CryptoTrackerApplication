@@ -16,6 +16,7 @@
 		43260D252B60C4FF00731D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43260D242B60C4FF00731D8D /* ContentView.swift */; };
 		43260D272B60C50100731D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43260D262B60C50100731D8D /* Assets.xcassets */; };
 		43260D2A2B60C50100731D8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43260D292B60C50100731D8D /* Preview Assets.xcassets */; };
+		438443162B7B040200775F24 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438443152B7B040200775F24 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		43260D242B60C4FF00731D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43260D262B60C50100731D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43260D292B60C50100731D8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		438443152B7B040200775F24 /* CoinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		43260D212B60C4FF00731D8D /* CrytoTrackerApplication */ = {
 			isa = PBXGroup;
 			children = (
+				438443142B7B03E400775F24 /* Models */,
 				4318C4582B79CD1E007D6B77 /* Core */,
 				4318C4512B79C5B3007D6B77 /* Extensions */,
 				43260D222B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift */,
@@ -128,6 +131,14 @@
 				43260D292B60C50100731D8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		438443142B7B03E400775F24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				438443152B7B040200775F24 /* CoinModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				4318C4632B79CE6B007D6B77 /* HomeView.swift in Sources */,
 				43260D232B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift in Sources */,
 				4318C4552B79C926007D6B77 /* Double.swift in Sources */,
+				438443162B7B040200775F24 /* CoinModel.swift in Sources */,
 				4318C45D2B79CD3F007D6B77 /* CircleButtonView.swift in Sources */,
 				4318C4532B79C5B3007D6B77 /* Color.swift in Sources */,
 				4318C45E2B79CD3F007D6B77 /* CircleButtonAnimationView.swift in Sources */,
