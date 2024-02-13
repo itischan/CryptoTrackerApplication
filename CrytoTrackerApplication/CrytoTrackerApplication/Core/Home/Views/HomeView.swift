@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  CrytoTrackerApplication
 //
-//  Created by ck on 2024-02-11.
+//  Created by chandru Kumaran on 2024-02-11.
 //
 
 import SwiftUI

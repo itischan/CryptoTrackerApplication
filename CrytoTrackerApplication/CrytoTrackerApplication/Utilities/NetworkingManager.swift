@@ -1,8 +1,8 @@
 //
 //  NetworkingManager.swift
-//  SwiftfulCrypto
+//  CryptoTrackerApplication
 //
-//  Created by Nick Sarno on 5/9/21.
+//  Created by Vinayak on 2/13/24
 //
 
 import Foundation
@@ -17,7 +17,7 @@ class NetworkingManager {
         var errorDescription: String? {
             switch self {
             case .badURLResponse(url: let url): return "[🔥] Bad response from URL: \(url)"
-            case .unknown: return "[⚠️] Unknown error occured"
+            case .unknown: return " Unknown error occured"
             }
         }
     }

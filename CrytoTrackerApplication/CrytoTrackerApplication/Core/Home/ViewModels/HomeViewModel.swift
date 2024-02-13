@@ -1,8 +1,8 @@
 //
 //  HomeViewModel.swift
-//  SwiftfulCrypto
+//  CryptoTrackerApplication
 //
-//  Created by Nick Sarno on 5/9/21.
+//  Created by Vinayak on 2/13/24
 //
 
 import Foundation
