@@ -12,6 +12,7 @@ struct CoinRowView: View {
     let coin: CoinModel
     let showHoldingsColumn: Bool
     
+    
     var body: some View {
         HStack(spacing: 0) {
             leftColumn
@@ -28,18 +29,14 @@ struct CoinRowView: View {
     }
 }
 
-struct CoinRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-
-            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
-        }
-    }
+#Preview{
+   
+    CoinRowView(coin: DeveloperPreview.instance.coin, showHoldingsColumn: true)
+           
+        
+     
 }
+ 
 
 extension CoinRowView {
     
@@ -47,14 +44,18 @@ extension CoinRowView {
         HStack(spacing: 0) {
             Text("\(coin.rank)")
                 .font(.caption)
-                .foregroundColor(Color.theme.secondaryText)
+                .foregroundStyle(Color.teal)
                 .frame(minWidth: 30)
+
             CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .font(.headline)
-                .padding(.leading, 6)
-                .foregroundColor(Color.theme.accent)
+                .lineLimit(2)
+                .padding(.leading,6)
+                .foregroundStyle(Color.gray)
+                
+
         }
     }
     
@@ -62,21 +63,22 @@ extension CoinRowView {
         VStack(alignment: .trailing) {
             Text(coin.currentHoldingsValue.asCurrencyWith2Decimals())
                 .bold()
+                
             Text((coin.currentHoldings ?? 0).asNumberString())
         }
-        .foregroundColor(Color.theme.accent)
+        .foregroundColor(Color.orange)
     }
     
     private var rightColumn: some View {
         VStack(alignment: .trailing) {
             Text(coin.currentPrice.asCurrencyWith6Decimals())
                 .bold()
-                .foregroundColor(Color.theme.accent)
+                .foregroundColor(Color.red)
             Text(coin.priceChangePercentage24H?.asPercentString() ?? "")
                 .foregroundColor(
                     (coin.priceChangePercentage24H ?? 0 >= 0) ?
-                    Color.theme.green :
-                    Color.theme.red
+                    Color.green :
+                    Color.red
                 )
         }
         .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
