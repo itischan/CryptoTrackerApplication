@@ -1,18 +1,53 @@
 //
 //  SearchBarView.swift
-//  CrytoTrackerApplication
+//  CryptoTrackerApplication
 //
-//  Created by Vinuz on 2024-02-13.
+//  Created by Judin Joseph on 2/13/24
 //
 
 import SwiftUI
 
 struct SearchBarView: View {
+    
+    @Binding var searchText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(
+                    searchText.isEmpty ?
+                    Color.green : Color.red
+                )
+            
+            TextField("Search by name or symbol...", text: $searchText)
+                .foregroundColor(Color.red)
+                .disableAutocorrection(true)
+                .overlay(
+                    Image(systemName: "xmark.circle.fill")
+                        .padding()
+                        .offset(x: 10)
+                        .foregroundColor(Color.blue)
+                        .opacity(searchText.isEmpty ? 0.0 : 1.0)
+                        .onTapGesture {
+                            
+                            searchText = ""
+                        }
+                    
+                    ,alignment: .trailing
+                )
+        }
+        .font(.headline)
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 25)
+                .fill(Color.gray)
+                .shadow(
+                    color: Color.red.opacity(0.15),
+                    radius: 10, x: 0, y: 0)
+        )
+        .padding()
     }
 }
-
 #Preview {
-    SearchBarView()
+    SearchBarView(searchText: .constant(""))
 }
