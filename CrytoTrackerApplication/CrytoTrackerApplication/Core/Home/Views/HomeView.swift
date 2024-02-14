@@ -28,6 +28,7 @@ struct HomeView: View {
                             }
                         }
                 }
+                SearchBarView(searchText: $vm.searchText)
                 Spacer(minLength: 0)
                 HStack{
                     Text("Coin")
