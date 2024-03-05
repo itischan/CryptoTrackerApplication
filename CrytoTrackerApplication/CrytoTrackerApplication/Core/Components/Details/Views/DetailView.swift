@@ -14,6 +14,12 @@ struct DetailView: View {
     }
     var body: some View {
         Text(coin.name)
+            .font(.largeTitle)
+        
+        Text("Further details to be added upon next sprint .Thanks")
+        
+        
+        
     }
 }
 
