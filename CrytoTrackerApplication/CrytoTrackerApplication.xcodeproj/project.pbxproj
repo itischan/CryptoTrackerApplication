@@ -30,6 +30,8 @@
 		4384432A2B7B071100775F24 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438443292B7B071100775F24 /* NetworkingManager.swift */; };
 		4384432C2B7B0FB000775F24 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384432B2B7B0FB000775F24 /* HomeViewModel.swift */; };
 		4384432E2B7B112500775F24 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384432D2B7B112500775F24 /* CoinDataService.swift */; };
+		447DDAF72B96AC900028E2B7 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DDAF62B96AC900028E2B7 /* NavigationLazyView.swift */; };
+		447DDAFC2B96AE8C0028E2B7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DDAFB2B96AE8C0028E2B7 /* DetailView.swift */; };
 		BBE5394E2B7BB23B00AA25EB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE5394D2B7BB23B00AA25EB /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		438443292B7B071100775F24 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		4384432B2B7B0FB000775F24 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4384432D2B7B112500775F24 /* CoinDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		447DDAF62B96AC900028E2B7 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		447DDAFB2B96AE8C0028E2B7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BBE5394D2B7BB23B00AA25EB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,7 @@
 		4318C4592B79CD26007D6B77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				447DDAF92B96AE770028E2B7 /* Details */,
 				4384431C2B7B05A900775F24 /* CoinImage */,
 				4318C45A2B79CD3F007D6B77 /* CircleButton */,
 				BBE5394D2B7BB23B00AA25EB /* SearchBarView.swift */,
@@ -125,6 +130,7 @@
 				438443172B7B04DF00775F24 /* CoinRowView.swift */,
 				4318C4622B79CE6B007D6B77 /* HomeView.swift */,
 				436A225E2B93F953008A6538 /* PortfolioView.swift */,
+				447DDAF62B96AC900028E2B7 /* NavigationLazyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +221,22 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		447DDAF92B96AE770028E2B7 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				447DDAFA2B96AE7E0028E2B7 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		447DDAFA2B96AE7E0028E2B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				447DDAFB2B96AE8C0028E2B7 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4384432C2B7B0FB000775F24 /* HomeViewModel.swift in Sources */,
+				447DDAFC2B96AE8C0028E2B7 /* DetailView.swift in Sources */,
 				438443182B7B04DF00775F24 /* CoinRowView.swift in Sources */,
 				43260D252B60C4FF00731D8D /* ContentView.swift in Sources */,
 				438443282B7B070100775F24 /* LocalFileManager.swift in Sources */,
@@ -296,6 +319,7 @@
 				4384432A2B7B071100775F24 /* NetworkingManager.swift in Sources */,
 				43260D232B60C4FF00731D8D /* CrytoTrackerApplicationApp.swift in Sources */,
 				4318C4552B79C926007D6B77 /* Double.swift in Sources */,
+				447DDAF72B96AC900028E2B7 /* NavigationLazyView.swift in Sources */,
 				438443212B7B05B900775F24 /* CoinImageView.swift in Sources */,
 				436A225F2B93F953008A6538 /* PortfolioView.swift in Sources */,
 				438443162B7B040200775F24 /* CoinModel.swift in Sources */,
