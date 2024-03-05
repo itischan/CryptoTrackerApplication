@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  CrytoTrackerApplication
 //
-//  Created by Ajai Jacob on 2024-03-04.
+//  Created by Vinayak Dev on 2024-03-04.
 //
 
 import SwiftUI
