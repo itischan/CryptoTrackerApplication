@@ -44,23 +44,27 @@ struct HomeView: View {
 
           
                 List{
-                    ForEach(vm.allCoins){coin in
-                        NavigationLink {
-                            DetailView(coin: coin)
-                        } label: {
-                            CoinRowView(coin: coin, showHoldingsColumn: false)
+                    if !showPortfolio{
+                        ForEach(vm.allCoins){coin in
+                            NavigationLink {
+                                DetailView(coin: coin)
+                            } label: {
+                                CoinRowView(coin: coin, showHoldingsColumn: false)
+                            }
                         }
 
                         
                     }
-                    ForEach(vm.portfolioCoins){coin in
-                        NavigationLink {
-                            DetailView(coin: coin)
-                        } label: {
-                            CoinRowView(coin: coin, showHoldingsColumn: true)
+                    if showPortfolio{
+                    
+                        ForEach(vm.portfolioCoins){coin in
+                            NavigationLink {
+                                DetailView(coin: coin)
+                            } label: {
+                                CoinRowView(coin: coin, showHoldingsColumn: true)
+                            }
+                            
                         }
-
-                        
                         
                     }
 

@@ -26,6 +26,7 @@ class HomeViewModel:ObservableObject{
         dataService.$allCoins
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
+               
             }
             .store(in: &cancellables)
         
@@ -36,6 +37,7 @@ class HomeViewModel:ObservableObject{
                   .map(filterAndSortCoins)
                   .sink { [weak self] (returnedCoins) in
                       self?.allCoins = returnedCoins
+                      
                   }
                   .store(in: &cancellables)
               
@@ -45,6 +47,7 @@ class HomeViewModel:ObservableObject{
                   .map(mapAllCoinsToPortfolioCoins)
                   .sink { [weak self] (returnedCoins) in
                       guard let self = self else { return }
+                      
                       self.portfolioCoins = self.sortPortfolioCoinsIfNeeded(coins: returnedCoins)
                   }
                   .store(in: &cancellables)
