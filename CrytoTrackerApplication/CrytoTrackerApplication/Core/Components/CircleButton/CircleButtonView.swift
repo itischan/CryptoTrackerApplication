@@ -15,7 +15,7 @@ struct CircleButtonView: View {
         
         Image(systemName: iconName)
             .font(.title)
-            .foregroundStyle(Color.black)
+            .foregroundStyle(Color.theme.accent)
             .frame(width: 50,height: 50)
             .background(
                 Circle()
