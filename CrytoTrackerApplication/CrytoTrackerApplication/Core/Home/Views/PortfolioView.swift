@@ -135,7 +135,7 @@ extension PortfolioView {
                 Text(getCurrentValue().asCurrencyWith2Decimals())
             }
         }
-        .animation(.none)
+        
         .padding()
         .font(.headline)
     }

@@ -41,10 +41,11 @@ struct DetailView: View {
         ScrollView {
             VStack {
                 
-
+                
                 VStack(spacing: 20) {
                     overviewTitle
                     Divider()
+                    ChartView(coin: vm.coin)
                     descriptionSection
                     overviewGrid
                     additionalTitle
