@@ -108,16 +108,16 @@ extension DetailView {
                         .lineLimit(showFullDescription ? nil : 3)
                         .font(.callout)
                         .foregroundColor(Color.theme.secondaryText)
-//                    Button {
-//                        withAnimation {
-//                            showFullDescription.toggle()
-//                        }
-//                    } label: {
-//                        Text(showFullDescription ? " LESS " :"READ MORE ")
-//                            .font(.caption)
-//                            .fontWeight(.bold)
-//                            .padding()
-//                    }
+                    Button {
+                        withAnimation {
+                            showFullDescription.toggle()
+                        }
+                    } label: {
+                        Text(showFullDescription ? " LESS " :"READ MORE ")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding()
+                    }
 
 
                     
