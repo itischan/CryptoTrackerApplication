@@ -108,6 +108,17 @@ extension DetailView {
                         .lineLimit(showFullDescription ? nil : 3)
                         .font(.callout)
                         .foregroundColor(Color.theme.secondaryText)
+//                    Button {
+//                        withAnimation {
+//                            showFullDescription.toggle()
+//                        }
+//                    } label: {
+//                        Text(showFullDescription ? " LESS " :"READ MORE ")
+//                            .font(.caption)
+//                            .fontWeight(.bold)
+//                            .padding()
+//                    }
+
 
                     
                 }
@@ -144,13 +155,13 @@ extension DetailView {
     
     private var websiteSection: some View {
         VStack(alignment: .leading, spacing: 20) {
-            if let websiteString = vm.websiteURL,
-               let url = URL(string: websiteString) {
+            if let websiteURL = vm.websiteURL,
+               let url = URL(string: websiteURL) {
                 Link("Website", destination: url)
             }
             
-            if let redditString = vm.redditURL,
-               let url = URL(string: redditString) {
+            if let redditURL = vm.redditURL,
+               let url = URL(string: redditURL) {
                 Link("Reddit", destination: url)
             }
             
