@@ -11,6 +11,7 @@ struct HomeView: View {
     @EnvironmentObject var vm : HomeViewModel
     @State private var showPortfolio = false
     @State private var showPortfolioView = false
+    @State private var showSettingsView = false
     var body: some View {
         ZStack{
             Color.theme.background
@@ -25,6 +26,9 @@ struct HomeView: View {
                         .onTapGesture {
                             if showPortfolio {
                                 showPortfolioView.toggle()
+                            }
+                            else{
+                                showSettingsView.toggle()
                             }
                         }
                     Spacer()
@@ -70,7 +74,9 @@ struct HomeView: View {
 
                 }.listStyle(PlainListStyle())
             }
-        }
+        }.sheet(isPresented: $showSettingsView, content: {
+            SettingsView()
+        })
     }
 }
 
