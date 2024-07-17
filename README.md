@@ -10,6 +10,10 @@ Group D(Cross Section)
 
 
 
+
+https://github.com/user-attachments/assets/f4bc74fc-5639-4870-90ca-4811481fbe63
+
+
 The Crypto App SwiftUI is a SwiftUI-based iOS application that provides live cryptocurrency data using the CoinGecko API. This app allows users to explore real-time information about various cryptocurrencies, including prices, market caps, and more.
 
 App Features:
